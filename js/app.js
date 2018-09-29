@@ -45,7 +45,15 @@ for (var i = 0; i < buttons.length; i++) {
 }    
  
 
+var menuGorne = document.querySelector('.navbar');
     
+ window.addEventListener('scroll', function() {
+    
+     menuGorne.style.borderBottom = '3px solid #7f7f7f';
+    
+    });
+    
+var tytulStrony = document.querySelector('.navbar-brand');
     
     
 
