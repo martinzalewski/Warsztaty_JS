@@ -53,10 +53,47 @@ var menuGorne = document.querySelector('.navbar');
     
     });
     
+    
+    
+    
+    
 var tytulStrony = document.querySelector('.navbar-brand');
     
     
+    
+    
+    
+    
+    
 
+var klikDoGory = document.getElementById('na-gore');
+    console.log(klikDoGory);
+    
+    klikDoGory.addEventListener('click', function(){
+        window.scroll(0, 0);
+    });
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 });
