@@ -11,9 +11,9 @@ var subMenu = document.querySelector('.dropdown');
        subMenu.style.display = 'block';
     });
 
-   //  menuButton.addEventListener('mouseout', function() {
-    //   subMenu.style.display = 'none';
-//    });
+     menuButton.addEventListener('mouseout', function() {
+         subMenu.style.display = 'none';
+    });
     
     
 });
