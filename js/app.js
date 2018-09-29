@@ -52,17 +52,36 @@ var menuGorne = document.querySelector('.navbar');
      menuGorne.style.borderBottom = '3px solid #7f7f7f';
     
     });
+
     
     
+var items = document.querySelectorAll('.org');
+var dots = document.querySelectorAll('.dot');
+var indexClicked;
     
     
-    
-var tytulStrony = document.querySelector('.navbar-brand');
-    
-    
-    
-    
-    
+for (var i = 0; i < dots.lenght; i++) {
+    dots[i].addEventListener('click', function(){
+            for (var i = 0; i < items.length; i++) {
+                dots[i].classList.remove('active');
+                items[i].classList.remove('active');
+            }
+        
+         this.classList.add('active');
+        
+        for (var i = 0; i < dots.length; i++){
+            
+            if (dots[i].classList.contains('active')) {
+                indexClicked = 1;
+                break;
+            }
+        }
+        
+    items[indexClicked].classList.add('visible');
+    });
+                            
+};
+
     
     
 
